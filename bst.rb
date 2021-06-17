@@ -157,21 +157,21 @@ tree = BST.new
 
 # array = [8, 5, 3, 7, 10, 12, 9] # Direct input to the array
 
-# puts "Enter the elements of the array: " # Taking input from the end user on the console
-# array = gets.chomp
-# array = array.split()
-# i = 0
-# for arg in array
-#    array[i] = arg.to_i
-#    i = i+1
-# end 
-
-array = ARGV # taking input in the command line along while starting the script
+puts "Enter the elements of the array: " # Taking input from the end user on the console
+array = gets.chomp
+array = array.split()
 i = 0
 for arg in array
    array[i] = arg.to_i
    i = i+1
-end
+end 
+
+# array = ARGV # taking input in the command line along while starting the script
+# i = 0
+# for arg in array
+#    array[i] = arg.to_i
+#    i = i+1
+# end
 
 array.each { |n| tree.insert(n) }
 num = 0
@@ -205,11 +205,11 @@ while num>=0
 		print "\nEnter the number to be searched: "
 		s = STDIN.gets.chomp.to_i
 		tree.search(s)	
-    when 6
-        print "\nEnter the number to be inserted: "
-        i = STDIN.gets.chomp.to_i
-        tree.insert(i)
-        print "#{i} is inserted"
+    	when 6
+        	print "\nEnter the number to be inserted: "
+        	i = STDIN.gets.chomp.to_i
+        	tree.insert(i)
+        	print "#{i} is inserted"
 	when 7
 		print "\nEnter the node to be deleted: "
 		r = STDIN.gets.chomp.to_i
@@ -219,11 +219,11 @@ while num>=0
 		print "\nAll paths from root to leaf in the BST: "
 		tree.paths
 	when 9
-        file = File.open("users.txt", "w") 
-        for x in array
-            file.puts(x)
-        end
-        print "\nThe elements are saved in a file"
+        	file = File.open("users.txt", "w") 
+        	for x in array
+            	   file.puts(x)
+        	end
+        	print "\nThe elements are saved in a file"
 		print "\n************************Thank you************************"
 		num = -1
 	end # case end
