@@ -14,6 +14,6 @@ This contains the code for Binary Search Tree Data structure which the following
 
 
 ## Note: 
-Input for the BST is mentioned in 3 methods. the three methods are mentioned in the code. Just uncomment the code to use the type of input method you wanna use.
+Input for the BST can be taken in 3 methods. The three methods are mentioned in the code. Just uncomment the code to use the type of input method you wanna use.
 
 
