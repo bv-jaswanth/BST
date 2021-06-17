@@ -13,3 +13,7 @@ This contains the code for Binary Search Tree Data structure which the following
 10. Input of the nodes can be given along with the script name as command line argument
 
 
+##Note: 
+Input for the BST is mentioned in 3 methods. the three methods are mentioned in the code. Just uncomment the code to use the type of input method you wanna use.
+
+
