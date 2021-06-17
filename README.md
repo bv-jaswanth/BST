@@ -10,6 +10,6 @@ This contains the code for Binary Search Tree Data structure which the following
 7. Remove an elemet from the BST
 8. Print all paths from root to every leaf node
 9. Save the array to a file on quit command
-10.Input of the nodes can be given along with the script name as command line argument
+10. Input of the nodes can be given along with the script name as command line argument
 
 
