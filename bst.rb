@@ -172,7 +172,6 @@ for arg in array
    array[i] = arg.to_i
    i = i+1
 end
-
 array.each { |n| tree.insert(n) }
 num = 0
 print "********************Binary search Tree********************\n"
@@ -185,8 +184,8 @@ while num>=0
 	num = num .to_i
 	case num
 	when 0
-		print "1.Pre order traversal\n2.Post order traversal\n3.In order traversal\n4.Minimum number of the BST"
-		print "\n5.Maximum number of the BST\n6.Search number\n7.Delete node\n8.Print All paths of the BST\n9.Quit"
+		print "1.Pre order traversal\n2.Post order traversal\n3.In order traversal\n4.Minimum number and Maximum number of the BST"
+		print "\n5.Search number\n6.Insert number\n7.Delete node\n8.Print All paths of the BST\n9.Quit"
 	when 1
 		print "\nPre Order traversal of the BST: "
 		tree.pre_order
@@ -199,13 +198,16 @@ while num>=0
 	when 4
 		print "\nMinimum number of the BST: "
 		tree.min
-	when 5
 		print "\nMaximum number of the BST: "
 		tree.max
-	when 6
+	when 5
 		print "\nEnter the number to be searched: "
 		s = STDIN.gets.chomp.to_i
 		tree.search(s)	
+    when 6
+        print "\nEnter the number to be inserted: "
+        i = STDIN.gets.chomp.to_i
+        tree.insert(i)
 	when 7
 		print "\nEnter the node to be deleted: "
 		r = STDIN.gets.chomp.to_i
